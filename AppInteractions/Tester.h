@@ -1,0 +1,35 @@
+#ifndef TESTER_H
+#define TESTER_H
+
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <vector>
+#include <cstdlib>
+#include <random>
+#include <unordered_set>
+
+using namespace std;
+
+class Tester{
+    public:
+        void initCapture();
+        void endCapture();	
+        void pressEnterToContinue();
+        void find(vector<int>& keys, const string* search, int& error);
+		void findInOrder(vector<int>& keys, const string* search, int& error);
+        string getOutput(){return output;}
+		// generate a set (no duplicates) of "count" random integers
+		// from 0 to "range"
+		void ran(vector<int>& list, int count, int range);
+		// generate a random integer in the given range
+		int ran(int range_from, int range_to);
+    private:
+        streambuf* oldCoutStreamBuf;
+    	ostringstream strCout;
+		string output;
+};
+
+
+
+#endif
