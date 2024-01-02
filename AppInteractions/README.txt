@@ -1,7 +1,4 @@
-Name: Danielle Nkem Ebende
-Student #: 101218592
-Course: COMP 2404 - Fall
-Assignment: #2
+Name: Danielle Nkem
 
 List of Files Provided: 
     - App.cc & App.h
@@ -32,6 +29,3 @@ Compilation and Execution Instrcutions:
     and 1 through 9 for "./a2test" and exit via entering 0.
     EXTRA: To clear your .o files to late compile freshly, enter "make clean".
 
-TO FIX:
-    Check for ./a2
-    - (3) it prints with icons
